@@ -16,17 +16,14 @@ function squareCode(input) {
       input = input.substr(columnLength)
     }
 
-    console.log("ARR", arr)
-
+    //FORMATION OF NEW WORD
     for (let i = 0; i <= rowLength ; i++) {
       encodedMsg.push(arr.reduce((accumulator, word) => accumulator + word[i], ""))
     }
 
     let squareCode = encodedMsg.join(" ")
-    return squareCode.split(new RegExp('undefined', 'i')).join('');
-
-    // return encodedMsg.join(" ").replace(New ReqExp"undefined", "")
-
+    //REMOVE UNDEFINED
+    return squareCode.split(new RegExp('undefined')).join('');
   }
 }
 console.log(squareCode("haveaniceday")) //hae and via ecy

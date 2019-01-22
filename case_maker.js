@@ -1,4 +1,5 @@
 function makeCase(sentence, style) {
+
   switch (style) {
     case "camel":
       let camelCase = "";

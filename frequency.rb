@@ -15,5 +15,5 @@ end
 frequencies.reverse!
 
 frequencies.each { |word, count|
-  puts "#{word} #{count}"
+  puts "#{word} #{count_to.s}"
 }

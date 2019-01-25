@@ -7,4 +7,13 @@ words = input.split(" ")
 words.each { |word|
   frequencies[word] += 1
 }
-puts frequencies
+
+frequencies = frequencies.sort_by do |word, count|
+  count
+end
+
+frequencies.reverse!
+
+frequencies.each { |word, count|
+  puts "#{word} #{count}"
+}

@@ -2,7 +2,7 @@
 
 function binary(n) {
   return Math.max(
-    ...Number(n) //convert into number
+    // ...Number(n) //convert into number
     .toString(2) //representation in binary
     .split(/0+/) //remove zero to group ones
     .map(e => e.length) //array with length of one

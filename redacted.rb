@@ -7,7 +7,7 @@ redact = gets.chomp
 words = input.split(" ") #ARRAY
 
 words.each do |word|
-  if word != redact
+  if !word.casecmp(redact)
     print word + " "
   else
     puts "REDACTED"
